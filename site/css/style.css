@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+}
+
+.wrap {
+    width: 960px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: white;
+}
