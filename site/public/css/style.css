@@ -2,6 +2,8 @@
 
 body {
     background-color: lightblue;
+    font-family: 'Montserrat', sans-serif;    
+
 }
 
 .wrap {
@@ -19,17 +21,18 @@ body {
     body {
         margin: 0;
         padding: 0;
-        background-size: 100%;
-        background-image: url(../img/background_index.jpg);
+        
     }
 
     .wrap {
-        width: 100vw;
+        width: 375px;
         height: 667px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        /* background-color: rgb(207, 197, 197); */
+        background-image: url(../img/background_index.jpg);
+
+        /* background-color: rgba(207, 197, 197, 0); */
     }
 
     header {
@@ -38,6 +41,7 @@ body {
         text-align: center;
         display: grid;
         align-items: center;
+        background-color: rgba(175, 170, 170, 0.7);
     }
 
     nav {
@@ -46,15 +50,34 @@ body {
         display: grid;
         text-align: center;
         align-items: center;
+        background-color: rgba(146, 137, 137, 0.8)
+    }
+
+    .material-icons {
+        transition: 0.5s;
+        font-size: 48px !important;
+    }
+
+    .material-icons:hover {
+        font-size: 60px !important;
+        transition: 0.5s;
     }
 
     main {
         grid-column: span 4;
+        grid-row: span 4;
+        display: inherit;
+        grid-template-columns: inherit;
+        grid-template-rows: 4;
+    }
+
+    .clock {
+        grid-column: inherit;
         grid-row: span 2;
     }
 
-    article {
-        grid-column: span 4;
+    .belowclock {
+        grid-column: inherit;
         grid-row: span 2;
     }
 
@@ -64,6 +87,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+        background-color: rgba(175, 170, 170, 0.5);
     }
 
     a {
