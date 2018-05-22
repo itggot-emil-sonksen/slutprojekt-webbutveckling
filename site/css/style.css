@@ -2,6 +2,8 @@
 
 body {
     background-color: lightblue;
+    /* background-image: url(../img/commie.jpg);
+    background-repeat: round; */
     font-family: 'Montserrat', sans-serif;    
 
 }
@@ -10,11 +12,111 @@ body {
     width: 960px;
     height: 720px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+}
+
+header {
+    grid-column: span 8;
+    grid-row: span 2;
+    background-color: blue;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    grid-column: span 8;
+    grid-row: 3 / 4;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    font-size: 24px;
+}
+
+nav > .icons {
+    display: none;
+}
+
+.home {
+    grid-column: span 1;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.about {
+    grid-column: span 1;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery {
+    grid-column: span 1;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    grid-column: span 8;
+    grid-row: span 8;
+    background-color: yellow;
+}
+
+footer {
+    grid-column: span 8;
+    grid-row: span 2;
+    background-color: pink;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.info {
+    grid-column: span 4;
+    grid-row: span 1;
+    text-align: center;
+}
+
+.links {
+    grid-column: span 4;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.instagram {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.github {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.menu {
+    display: none;
 }
 
 @media only screen and (max-device-width: 400px) {
@@ -41,6 +143,7 @@ body {
         text-align: center;
         display: grid;
         align-items: center;
+        font-size: 16px;
         background-color: rgba(175, 170, 170, 0.7);
     }
 
@@ -69,6 +172,7 @@ body {
         display: inherit;
         grid-template-columns: inherit;
         grid-template-rows: repeat(4, 1fr);
+        /* background-color: none; */
     }
 
     .clock {
