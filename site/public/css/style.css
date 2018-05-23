@@ -97,11 +97,6 @@ a {
     text-align: center;
 }
 
-.links > a {
-    font-size: 18px;
-
-}
-
 .instagram {
     grid-column: span 1;
     grid-row: span 1;
@@ -153,6 +148,10 @@ a {
     z-index: 11;
 }
 
+.menu img {
+    margin-top: 10vh;
+}
+
 .show {
     display: block;
     transition: transform ease-out 0.5s;
@@ -168,7 +167,8 @@ a {
 
 ul {
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 45px;
+    margin-bottom: 0;
 }
 
 @media only screen and (min-device-width: 400px) {
