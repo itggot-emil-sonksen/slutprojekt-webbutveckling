@@ -72,6 +72,20 @@ aside {
     grid-column: span 2;
     grid-row: span 4;
     background-color: rgba(175, 175, 175, 0.8);
+    display: grid;
+    grid-template-columns: 50vw;
+    grid-template-rows: 322px 123px;
+}
+
+.march {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.imageinfo {
+    text-align: center;
+    font-size: 12px;
+    margin: 15px;
 }
 
 .clock {
