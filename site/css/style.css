@@ -100,7 +100,7 @@ aside {
     margin: 15px;
 }
 
-.gallery {
+.page-gallery {
     grid-column: span 4;
     grid-row: span 4;
     display: grid;
@@ -285,10 +285,12 @@ ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
+        text-align: center;
     }
     
     .home {
         grid-column: span 1;
+        grid-row: span 1;
         display: grid;
         align-items: center;
         text-align: center;
