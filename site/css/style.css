@@ -124,10 +124,6 @@ aside {
     grid-row: 6 / 9;
 }
 
-.gallery-info {
-
-}
-
 footer {
     grid-column: span 4;
     grid-row: span 2;
@@ -236,9 +232,8 @@ ul {
 
 @media only screen and (min-device-width: 400px) {
     body {
-        background-color: lightblue;
-        /* background-image: url(../img/commie.jpg);
-        background-repeat: round; */
+        background-image: url(../img/menu-image.png);
+        background-repeat: round;
     }
     
     .wrap {
@@ -250,12 +245,13 @@ ul {
         background-color: white;
         margin-left: auto;
         margin-right: auto;
+        background-image: url(../img/background_image_desktop.png)
     }
     
     header {
         grid-column: span 8;
         grid-row: span 2;
-        background-color: blue;
+        background-color: rgba(146, 137, 137, 0.8);
         display: grid;
         align-items: center;
         text-align: center;
@@ -269,7 +265,7 @@ ul {
     nav {
         grid-column: span 8;
         grid-row: 3 / 4;
-        background-color: green;
+        background-color: rgba(175, 170, 170, 0.7);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
@@ -290,7 +286,6 @@ ul {
     
     .home {
         grid-column: span 1;
-        grid-row: span 1;
         display: grid;
         align-items: center;
         text-align: center;
@@ -313,13 +308,38 @@ ul {
     main {
         grid-column: span 8;
         grid-row: span 8;
-        background-color: yellow;
+        /* background-color: yellow; */
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
     }
     
+    article {
+        display: none;
+        grid-column: span 3;
+        grid-row: span 8;
+    }
+
+    .aside {
+        display: none;
+        grid-column: span 5;
+        grid-row: span 6;
+        background-color: none;
+    }
+
+    .march {
+        display: none;
+        
+    }
+
+    .imageinfo {
+        display: none;
+    }
+
     footer {
         grid-column: span 8;
         grid-row: span 2;
-        background-color: pink;
+        background-color: rgba(175, 170, 170, 0.8);
         display: grid;
         align-items: center;
         text-align: center;
@@ -328,15 +348,49 @@ ul {
         grid-template-rows: 1fr;
     }
     
+    footer p {
+        margin: 0;
+    }
+
     a {
         text-decoration: none;
         color: black;
+        transition: 0.5s;
+    }
+
+    a:hover {
+        color: #383838;
+        border-style: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: #383838;  
+    }
+
+    .desktop a:hover {
+        transition: 0.5s;
+        font-size: 28px;
+    }
+
+    footer a:hover {
+        transition: 0.5s;
+        font-size: 24px;
+        
     }
     
     .info {
         grid-column: span 4;
         grid-row: span 1;
         text-align: center;
+        transition: 0.5s;
+    }
+
+    .info:hover {
+        border-style: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: #383838;  
     }
     
     .links {
