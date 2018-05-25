@@ -94,10 +94,18 @@ aside {
     grid-row: span 1;
 }
 
+.march-desktop {
+    display: none;
+}
+
 .imageinfo {
     text-align: center;
     font-size: 12px;
     margin: 15px;
+}
+
+.imageinfo-desktop {
+    display: none;
 }
 
 .page-gallery {
@@ -107,6 +115,10 @@ aside {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(9, 1fr);
     background-color: rgba(170, 160, 160, 0.4);
+}
+
+.galley-desktop {
+    display: none;
 }
 
 .image1 {
@@ -122,6 +134,10 @@ aside {
 .image3 {
     grid-column: 5 / 7;
     grid-row: 6 / 9;
+}
+
+.image4 {
+    display: none;
 }
 
 footer {
@@ -286,23 +302,26 @@ ul {
     
     .home {
         grid-column: span 1;
-        display: grid;
+        display: flex;
         align-items: center;
         text-align: center;
+        justify-content: space-around;
     }
     
     .about {
         grid-column: span 1;
-        display: grid;
+        display: flex;
         align-items: center;
         text-align: center;
+        justify-content: space-around;
     }
     
     .gallery {
         grid-column: span 1;
-        display: grid;
+        display: flex;
         align-items: center;
         text-align: center;
+        justify-content: space-around;
     }
     
     main {
@@ -315,24 +334,104 @@ ul {
     }
     
     article {
-        display: none;
         grid-column: span 3;
         grid-row: span 8;
     }
 
-    .aside {
-        display: none;
+    article h1 {
+        font-size: 40px;
+    }
+
+    article p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    aside {
         grid-column: span 5;
-        grid-row: span 6;
-        background-color: none;
+        grid-row: span 8;
+        background-color: transparent !important;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
     }
 
     .march {
         display: none;
-        
+    }
+
+    .march-desktop {
+        display: grid !important;
+        grid-column: span 5;
+        grid-row: span 6;
     }
 
     .imageinfo {
+        display: none;
+    }
+
+    .imageinfo-desktop {
+        display: grid !important;
+        grid-column: span 5;
+        grid-row: span 2;
+        background-color: rgba(175, 180, 180, 0.7);
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .page-gallery {
+        grid-column: span 8;
+        grid-row: span 8;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+    }
+
+    .gallery-desktop {
+        grid-column: 2 / 11;
+        grid-row: 2 / 13;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+    }
+
+    .desktop-image1 {
+        grid-column: 1 / 5;
+        grid-row: 1 / 6;
+        background-color: yellow;
+    }
+
+    .desktop-image2 {
+        grid-column: 1 / 5;
+        grid-row: 7 / 12;
+        background-color: yellow;
+    }
+
+    .desktop-image3 {
+        grid-column: 6 / 10;
+        grid-row: 1 / 6;
+        background-color: yellow;
+    }
+
+    .desktop-image4 {
+        grid-column: 6 / 10;
+        grid-row: 7 / 12;
+        background-color: yellow;
+    }
+
+    .image1 {
+        display: none;
+    }
+
+    .image2 {
+       display: none;
+    }
+
+    .image3 {
         display: none;
     }
 
@@ -373,32 +472,22 @@ ul {
     }
 
     footer a:hover {
-        transition: 0.5s;
-        font-size: 24px;
-        
+        transition: 0.5s;        
     }
     
     .info {
         grid-column: span 4;
         grid-row: span 1;
         text-align: center;
-        transition: 0.5s;
-    }
-
-    .info:hover {
-        border-style: solid;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom-color: #383838;  
     }
     
     .links {
         grid-column: span 4;
         grid-row: span 1;
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+        justify-content: space-around;
     }
     
     .instagram {
